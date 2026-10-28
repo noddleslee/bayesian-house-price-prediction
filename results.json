@@ -1,0 +1,173 @@
+{
+  "provenance": "Values extracted from the saved outputs of the supplied notebook. Displayed precision is retained.",
+  "source_sha256": "4616885a9049e162660ae49511edcd3a8e3d16e5196ec0880f04b02ce69cdcec",
+  "train_size": 331,
+  "test_size": 83,
+  "baseline": {
+    "MAE": 10.9167,
+    "RMSE": 13.1137
+  },
+  "methods": {
+    "Analytical": {
+      "MAE": 5.6319,
+      "RMSE": 7.6734,
+      "Coverage (%)": 96.3855,
+      "Mean interval width": 37.7424
+    },
+    "Direct sampling": {
+      "MAE": 5.6353,
+      "RMSE": 7.6757,
+      "Coverage (%)": 96.3855,
+      "Mean interval width": 37.7311
+    },
+    "Gibbs MCMC": {
+      "MAE": 5.632,
+      "RMSE": 7.6731,
+      "Coverage (%)": 96.3855,
+      "Mean interval width": 37.6886
+    }
+  },
+  "coefficients": [
+    {
+      "parameter": "Intercept",
+      "Analytical": {
+        "mean": 43.502566,
+        "interval": [
+          40.344551,
+          46.660581
+        ]
+      },
+      "Direct sampling": {
+        "mean": 43.5511542,
+        "interval": [
+          40.249001,
+          46.790995
+        ]
+      },
+      "Gibbs MCMC": {
+        "mean": 43.496529,
+        "interval": [
+          40.340055,
+          46.613214
+        ]
+      }
+    },
+    {
+      "parameter": "House age",
+      "Analytical": {
+        "mean": -0.258253,
+        "interval": [
+          -0.349719,
+          -0.166788
+        ]
+      },
+      "Direct sampling": {
+        "mean": -0.258329138,
+        "interval": [
+          -0.352292,
+          -0.168968
+        ]
+      },
+      "Gibbs MCMC": {
+        "mean": -0.257858,
+        "interval": [
+          -0.349097,
+          -0.166619
+        ]
+      }
+    },
+    {
+      "parameter": "Distance to MRT",
+      "Analytical": {
+        "mean": -0.005496,
+        "interval": [
+          -0.006566,
+          -0.004425
+        ]
+      },
+      "Direct sampling": {
+        "mean": -0.00550987803,
+        "interval": [
+          -0.006595,
+          -0.00446
+        ]
+      },
+      "Gibbs MCMC": {
+        "mean": -0.005496,
+        "interval": [
+          -0.006577,
+          -0.004419
+        ]
+      }
+    },
+    {
+      "parameter": "Convenience stores",
+      "Analytical": {
+        "mean": 1.248642,
+        "interval": [
+          0.806931,
+          1.690354
+        ]
+      },
+      "Direct sampling": {
+        "mean": 1.24437349,
+        "interval": [
+          0.805668,
+          1.684152
+        ]
+      },
+      "Gibbs MCMC": {
+        "mean": 1.247691,
+        "interval": [
+          0.80221,
+          1.680592
+        ]
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "parameter": "Intercept",
+      "ess_bulk": 7793.27,
+      "ess_tail": 7771.67,
+      "r_hat": 0.999967,
+      "mcse_mean": 0.018329,
+      "mcse_sd": 0.0127153
+    },
+    {
+      "parameter": "House_age",
+      "ess_bulk": 8226.75,
+      "ess_tail": 7823.11,
+      "r_hat": 1.00029,
+      "mcse_mean": 0.000508873,
+      "mcse_sd": 0.000364277
+    },
+    {
+      "parameter": "MRT_distance",
+      "ess_bulk": 8014.45,
+      "ess_tail": 8095.44,
+      "r_hat": 1.00044,
+      "mcse_mean": 6.15405e-06,
+      "mcse_sd": 4.61509e-06
+    },
+    {
+      "parameter": "Stores",
+      "ess_bulk": 7895.47,
+      "ess_tail": 7989.91,
+      "r_hat": 0.999779,
+      "mcse_mean": 0.00253879,
+      "mcse_sd": 0.00180176
+    },
+    {
+      "parameter": "sigma2",
+      "ess_bulk": 7718.94,
+      "ess_tail": 7808.93,
+      "r_hat": 1.00001,
+      "mcse_mean": 0.0807425,
+      "mcse_sd": 0.0608814
+    }
+  ],
+  "covered_observations": 80,
+  "noise_only_width": 37.49,
+  "rmse_reduction_percent": 41.48562190686076
+}

@@ -1,0 +1,11 @@
+# Python 3.12 or newer
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+ucimlrepo==0.0.7
+arviz-base
+arviz-stats[xarray]
+jupyterlab
+ipykernel
